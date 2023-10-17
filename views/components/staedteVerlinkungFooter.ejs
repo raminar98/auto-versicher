@@ -1,0 +1,8 @@
+<% let limit = (arr.length); %>
+<% for(let i = 0; i < Math.ceil(limit/4);i++) {%>
+
+<% for(let j = (i*4); j <= 3+(i*4); j++) {%>
+<a href="/<%= keyword %><%= arr[j].hauptortUrl %>/<%= arr[j].ortUrl %>/"><%= arr[j].ort %></a>,
+<% } %>
+
+<% } %>
